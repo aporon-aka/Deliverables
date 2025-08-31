@@ -34,20 +34,23 @@ class MeCabSimple:
                     output.append(node.surface.upper())
             node = node.next
         return output
-    
+'''
+使用例
+'''
 # # 形態素解析するテキスト
 # text = 'ブルベ冬です。薄づきですがするーっとしたテクスチャー、ぴたっとフィットしてくれます。透け感がありつつも、色味はしっかりでてくれます。スーッと少しだけひんやりして、気持ち良い。'
 # # インスタンス作成
 # ms = MeCabSimple(text)
 
+# 解析結果の取得
 # # print(ms.parse)
 
+# トークン化したテキストの取得
 # # tokens = ms.tokenize()
 # # print(tokens)
-# # print(len(tokens))
 
+# 特定の品詞を取得
 # result = ms.filter_pos('名詞','形容詞','副詞')
 # print(result)
-# print(len(result))
 
 
