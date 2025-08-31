@@ -1,4 +1,4 @@
-# IT-IDF を計算する
+# 日本語文書のTF-IDF を計算する
 from math import log
 
 class JaTfidf:
@@ -60,7 +60,9 @@ class JaTfidf:
         docs_tf_idf = {k: v/len(docs_tf_idf) for k, v in docs_tf_idf.items()}
 
         return sorted(docs_tf_idf.items(), key=lambda x:x[1], reverse=True) if sort else list(docs_tf_idf.items())
-
+'''
+使用例
+'''
 # # ベクトル化する文字列
 # text = [
 #     ['発色', 'よく', '潤い', '他', '色', 'ほしい'],
@@ -68,8 +70,12 @@ class JaTfidf:
 #     ['テクスチャー', 'リップ', '探し', '気に入り']
 #     ]
 
+# インスタンス作成
 # jaTfidf = JaTfidf()
 
-# # 文書全体のTF-IDF
+# # 文章ごとのTF-IDFを求める
+# tf_idf = jaTfidf.vectorizer_transform(text)
+
+# # 文書全体のTF-IDFを求める
 # docs_tf_idf = jaTfidf.whole_docs(text)
 # print(docs_tf_idf)
