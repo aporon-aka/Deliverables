@@ -1,4 +1,4 @@
-# IT-IDF を計算するコード
+# 商品レビューから商品の特徴をタグ付けする
 from pathlib import Path
 import json
 import collections
