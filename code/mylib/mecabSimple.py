@@ -42,15 +42,13 @@ class MeCabSimple:
 # # インスタンス作成
 # ms = MeCabSimple(text)
 
-# 解析結果の取得
-# # print(ms.parse)
+# # 解析結果の取得
+# print(ms.parse)
 
-# トークン化したテキストの取得
-# # tokens = ms.tokenize()
-# # print(tokens)
+# # トークン化したテキストの取得
+# tokens = ms.tokenize()
+# print(tokens)
 
-# 特定の品詞を取得
+# # 特定の品詞を取得
 # result = ms.filter_pos('名詞','形容詞','副詞')
 # print(result)
-
-
